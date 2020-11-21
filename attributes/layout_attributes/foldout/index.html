@@ -1,670 +1,1406 @@
 
-<!DOCTYPE html>
-
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="Tamerlan Favilevich" name="author"/>
-<link href="../../../assets/images/favicon.png" rel="shortcut icon"/>
-<meta content="mkdocs-1.1.2, mkdocs-material-6.1.3" name="generator"/>
-<title>Foldout - Apex Inspector</title>
-<link href="../../../assets/stylesheets/main.2cb7adb3.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.f0267088.min.css" rel="stylesheet"/>
-<meta content="#ef5552" name="theme-color"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&amp;display=fallback" rel="stylesheet"/>
-<style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
-<link href="../../../stylesheets/extra.css" rel="stylesheet"/>
-</head>
-<body data-md-color-accent="red" data-md-color-primary="red" data-md-color-scheme="" dir="ltr">
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#foldout">
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://apexinspector.github.io/ApexInspector/attributes/layout_attributes/foldout/">
+      
+      
+        <meta name="author" content="Tamerlan Favilevich">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.3">
+    
+    
+      
+        <title>Foldout - Apex Inspector</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.2cb7adb3.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.f0267088.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#ef5552">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="red" data-md-color-accent="red">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#foldout" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
 <header class="md-header" data-md-component="header">
-<nav aria-label="Header" class="md-header-nav md-grid">
-<a aria-label="Apex Inspector" class="md-header-nav__button md-logo" href="../../.." title="Apex Inspector">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
-</a>
-<label class="md-header-nav__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"></path></svg>
-</label>
-<div class="md-header-nav__title" data-md-component="header-title">
-<div class="md-header-nav__ellipsis">
-<span class="md-header-nav__topic md-ellipsis">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="https://apexinspector.github.io/ApexInspector/" title="Apex Inspector" class="md-header-nav__button md-logo" aria-label="Apex Inspector">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             Apex Inspector
           </span>
-<span class="md-header-nav__topic md-ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
             
               Foldout
             
           </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</nav>
+    
+    
+  </nav>
 </header>
-<div class="md-container" data-md-component="container">
-<nav aria-label="Tabs" class="md-tabs md-tabs--active" data-md-component="tabs">
-<div class="md-tabs__inner md-grid">
-<ul class="md-tabs__list">
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../..">
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+
+  
+
+<nav class="md-tabs md-tabs--active" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../.." class="md-tabs__link">
           Manual
         </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../view_attributes/array/">
+      
+    </li>
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../view_attributes/array/" class="md-tabs__link">
           Attributes
         </a>
-</li>
-<li class="md-tabs__item">
-<a class="md-tabs__link" href="../../../api_references/custom_attributes/custom_view/view-attribute/">
+      
+    </li>
+  
+
+  
+
+      
+        
+  
+  
+    
+    
+  
+  
+    <li class="md-tabs__item">
+      
+        <a href="../../../api_references/custom_attributes/custom_view/view-attribute/" class="md-tabs__link">
           API References
         </a>
-</li>
-</ul>
-</div>
+      
+    </li>
+  
+
+  
+
+      
+    </ul>
+  </div>
 </nav>
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="Apex Inspector" class="md-nav__button md-logo" href="../../.." title="Apex Inspector">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"></path></svg>
-</a>
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://apexinspector.github.io/ApexInspector/" title="Apex Inspector" class="md-nav__button md-logo" aria-label="Apex Inspector">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
     Apex Inspector
   </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" id="nav-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-1">
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1" type="checkbox" id="nav-1">
+    
+    <label class="md-nav__link" for="nav-1">
       Manual
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Manual" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="nav-1">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Manual" data-md-level="1">
+      <label class="md-nav__title" for="nav-1">
+        <span class="md-nav__icon md-icon"></span>
         Manual
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../..">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../.." class="md-nav__link">
       Getting Started
     </a>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" id="nav-1-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-1-2">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-2" type="checkbox" id="nav-1-2">
+    
+    <label class="md-nav__link" for="nav-1-2">
       Attribute Types
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Attribute Types" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-1-2">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Attribute Types" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-2">
+        <span class="md-nav__icon md-icon"></span>
         Attribute Types
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manual/attribute_types/property-views/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../manual/attribute_types/property-views/" class="md-nav__link">
       Views
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manual/attribute_types/property-validators/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../manual/attribute_types/property-validators/" class="md-nav__link">
       Validators
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manual/attribute_types/property-painters/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../manual/attribute_types/property-painters/" class="md-nav__link">
       Painters
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manual/attribute_types/property-groups/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../manual/attribute_types/property-groups/" class="md-nav__link">
       Groups
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-3" id="nav-1-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-1-3">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-1-3" type="checkbox" id="nav-1-3">
+    
+    <label class="md-nav__link" for="nav-1-3">
       Global Settings
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Global Settings" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-1-3">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Global Settings" data-md-level="2">
+      <label class="md-nav__title" for="nav-1-3">
+        <span class="md-nav__icon md-icon"></span>
         Global Settings
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../manual/global_settings/setting/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../manual/global_settings/setting/" class="md-nav__link">
       Settings
     </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2" id="nav-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-2">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+    
+    <label class="md-nav__link" for="nav-2">
       Attributes
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Attributes" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="nav-2">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Attributes" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        <span class="md-nav__icon md-icon"></span>
         Attributes
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" id="nav-2-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-1">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-1" type="checkbox" id="nav-2-1">
+    
+    <label class="md-nav__link" for="nav-2-1">
       View
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="View" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-1">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="View" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-1">
+        <span class="md-nav__icon md-icon"></span>
         View
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/array/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/array/" class="md-nav__link">
       Array
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/dropdown-reference/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/dropdown-reference/" class="md-nav__link">
       Dropdown Reference
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/reorderable-list/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/reorderable-list/" class="md-nav__link">
       Reorderable List
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/asset-selecter/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/asset-selecter/" class="md-nav__link">
       Asset Selecter
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/tag-popup/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/tag-popup/" class="md-nav__link">
       Tag Popup
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/scene-selecter/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/scene-selecter/" class="md-nav__link">
       Scene Selecter
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/toggle-left/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/toggle-left/" class="md-nav__link">
       Toggle Left
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/file-path/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/file-path/" class="md-nav__link">
       File Path
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/folder-path/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/folder-path/" class="md-nav__link">
       Folder Path
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../view_attributes/selectable-enum/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../view_attributes/selectable-enum/" class="md-nav__link">
       Selectable Enum
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" id="nav-2-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-2">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-2" type="checkbox" id="nav-2-2">
+    
+    <label class="md-nav__link" for="nav-2-2">
       Validator
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Validator" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-2">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Validator" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-2">
+        <span class="md-nav__icon md-icon"></span>
         Validator
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../validator_attributes/asset-only/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../validator_attributes/asset-only/" class="md-nav__link">
       Asset Only
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../validator_attributes/max-value/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../validator_attributes/max-value/" class="md-nav__link">
       Max Value
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../validator_attributes/min-value/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../validator_attributes/min-value/" class="md-nav__link">
       Min Value
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../validator_attributes/not-null/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../validator_attributes/not-null/" class="md-nav__link">
       Not Null
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../validator_attributes/scene-object-only/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../validator_attributes/scene-object-only/" class="md-nav__link">
       Scene Object Only
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" id="nav-2-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-3">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-3" type="checkbox" id="nav-2-3">
+    
+    <label class="md-nav__link" for="nav-2-3">
       Painter
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Painter" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-3">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Painter" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-3">
+        <span class="md-nav__icon md-icon"></span>
         Painter
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/object-preview/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/object-preview/" class="md-nav__link">
       Object Preview
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/message/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/message/" class="md-nav__link">
       Message
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/property-space/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/property-space/" class="md-nav__link">
       Property Space
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/label-width/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/label-width/" class="md-nav__link">
       Label Width
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/prefix/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/prefix/" class="md-nav__link">
       Prefix
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/suffix/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/suffix/" class="md-nav__link">
       Suffix
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../painter_attributes/indent/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../painter_attributes/indent/" class="md-nav__link">
       Indent
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" id="nav-2-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-4">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-4" type="checkbox" id="nav-2-4" checked>
+    
+    <label class="md-nav__link" for="nav-2-4">
       Group
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Group" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-4">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Group" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-4">
+        <span class="md-nav__icon md-icon"></span>
         Group
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../group/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../group/" class="md-nav__link">
       Group
     </a>
-</li>
-<li class="md-nav__item md-nav__item--active">
-<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
-<label class="md-nav__link md-nav__link--active" for="__toc">
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
         Foldout
         <span class="md-nav__icon md-icon"></span>
-</label>
-<a class="md-nav__link md-nav__link--active" href="./">
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Foldout
     </a>
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#support-types">
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#support-types" class="md-nav__link">
     Support Types
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#parameters">
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#examples">
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
     Examples
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#demo">
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
     Demo
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../tab/">
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../tab/" class="md-nav__link">
       Tab
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../button-horizontal-group/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../button-horizontal-group/" class="md-nav__link">
       Button Horiaontal Group
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" id="nav-2-5" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-5">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-5" type="checkbox" id="nav-2-5">
+    
+    <label class="md-nav__link" for="nav-2-5">
       Conditional
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Conditional" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-5">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Conditional" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-5">
+        <span class="md-nav__icon md-icon"></span>
         Conditional
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../condition_attributes/active-if/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../condition_attributes/active-if/" class="md-nav__link">
       Active If
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../condition_attributes/visible-if/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../condition_attributes/visible-if/" class="md-nav__link">
       Visible If
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" id="nav-2-6" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-6">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-6" type="checkbox" id="nav-2-6">
+    
+    <label class="md-nav__link" for="nav-2-6">
       Misc
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Misc" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-6">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Misc" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-6">
+        <span class="md-nav__icon md-icon"></span>
         Misc
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../misc_attributes/label/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc_attributes/label/" class="md-nav__link">
       Label
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../misc_attributes/hide-label/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc_attributes/hide-label/" class="md-nav__link">
       Hide Label
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../misc_attributes/readonly/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc_attributes/readonly/" class="md-nav__link">
       ReadOnly
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../misc_attributes/hide-script-field/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc_attributes/hide-script-field/" class="md-nav__link">
       Hide Script Field
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../misc_attributes/reference-content/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../misc_attributes/reference-content/" class="md-nav__link">
       Reference Content
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" id="nav-2-7" type="checkbox"/>
-<label class="md-nav__link" for="nav-2-7">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2-7" type="checkbox" id="nav-2-7">
+    
+    <label class="md-nav__link" for="nav-2-7">
       Button
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Button" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-2-7">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Button" data-md-level="2">
+      <label class="md-nav__title" for="nav-2-7">
+        <span class="md-nav__icon md-icon"></span>
         Button
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../button_attributes/button/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../button_attributes/button/" class="md-nav__link">
       Button
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../button_attributes/inline-button/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../button_attributes/inline-button/" class="md-nav__link">
       Inline Button
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../button_attributes/bottom-button/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../button_attributes/bottom-button/" class="md-nav__link">
       Bottom Button
     </a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" id="nav-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-3">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
       API References
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="API References" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="nav-3">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="API References" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        <span class="md-nav__icon md-icon"></span>
         API References
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" id="nav-3-1" type="checkbox"/>
-<label class="md-nav__link" for="nav-3-1">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
+    
+    <label class="md-nav__link" for="nav-3-1">
       Custom View
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Custom View" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-3-1">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Custom View" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-1">
+        <span class="md-nav__icon md-icon"></span>
         Custom View
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_view/view-attribute/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_view/view-attribute/" class="md-nav__link">
       View Attirbute
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_view/property-view/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_view/property-view/" class="md-nav__link">
       Property View
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_view/virtual-methods/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_view/virtual-methods/" class="md-nav__link">
       Virtual Methods
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" id="nav-3-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-3-2">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+    
+    <label class="md-nav__link" for="nav-3-2">
       Custom Validator
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Custom Validator" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-3-2">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Custom Validator" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        <span class="md-nav__icon md-icon"></span>
         Custom Validator
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_validator/validator-attribute/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_validator/validator-attribute/" class="md-nav__link">
       Validator Attirbute
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_validator/property-validator/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_validator/property-validator/" class="md-nav__link">
       Property Validator
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_validator/virtual-methods/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_validator/virtual-methods/" class="md-nav__link">
       Virtual Methods
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" id="nav-3-3" type="checkbox"/>
-<label class="md-nav__link" for="nav-3-3">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-3" type="checkbox" id="nav-3-3">
+    
+    <label class="md-nav__link" for="nav-3-3">
       Custom Painter
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Custom Painter" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-3-3">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Custom Painter" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-3">
+        <span class="md-nav__icon md-icon"></span>
         Custom Painter
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_painter/painter-attribute/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_painter/painter-attribute/" class="md-nav__link">
       Painter Attirbute
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_painter/property-painter/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_painter/property-painter/" class="md-nav__link">
       Property Painter
     </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/custom_attributes/custom_painter/virtual-methods/">
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/custom_attributes/custom_painter/virtual-methods/" class="md-nav__link">
       Virtual Methods
     </a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" id="nav-3-4" type="checkbox"/>
-<label class="md-nav__link" for="nav-3-4">
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3-4" type="checkbox" id="nav-3-4">
+    
+    <label class="md-nav__link" for="nav-3-4">
       Interfaces
       <span class="md-nav__icon md-icon"></span>
-</label>
-<nav aria-label="Interfaces" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-3-4">
-<span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Interfaces" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-4">
+        <span class="md-nav__icon md-icon"></span>
         Interfaces
       </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../../api_references/interfaces/i-property-validator-receiver/">
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../api_references/interfaces/i-property-validator-receiver/" class="md-nav__link">
       IPropertyValidatorReceiver
     </a>
-</li>
-</ul>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
 </nav>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
-</nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#support-types">
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#support-types" class="md-nav__link">
     Support Types
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#parameters">
+      
+        <li class="md-nav__item">
+  <a href="#parameters" class="md-nav__link">
     Parameters
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#examples">
+      
+        <li class="md-nav__item">
+  <a href="#examples" class="md-nav__link">
     Examples
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#demo">
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
     Demo
   </a>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content">
-<article class="md-content__inner md-typeset">
-<h1 id="foldout">Foldout</h1>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="foldout">Foldout</h1>
 <p><code>[Foldout]</code> attribute used for layout properties in expandable foldout. </p>
-<hr/>
+<hr />
 <h3 id="support-types">Support Types</h3>
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.41 13.41L6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7z"></path></svg></span> Any types.</p>
-<hr/>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M.41 13.41L6 19l1.41-1.42L1.83 12m20.41-6.42L11.66 16.17 7.5 12l-1.43 1.41L11.66 19l12-12M18 7l-1.41-1.42-6.35 6.35 1.42 1.41L18 7z"/></svg></span> Any types.</p>
+<hr />
 <h3 id="parameters">Parameters</h3>
 <table>
 <thead>
@@ -680,21 +1416,21 @@
 </tr>
 </tbody>
 </table>
-<hr/>
+<hr />
 <h3 id="examples">Examples</h3>
 <div class="highlight"><pre><span></span><code><span class="k">public</span> <span class="kt">float</span> <span class="n">value1</span><span class="p">;</span>
 
-<span class="na">[Foldout("Some Title")]</span>
+<span class="na">[Foldout(&quot;Some Title&quot;)]</span>
 <span class="k">public</span> <span class="kt">float</span> <span class="n">value2</span><span class="p">;</span>
 
-<span class="na">[Foldout("Some Title")]</span>
+<span class="na">[Foldout(&quot;Some Title&quot;)]</span>
 <span class="k">public</span> <span class="kt">float</span> <span class="n">value3</span><span class="p">;</span>
 </code></pre></div>
 <details class="note"><summary>Note</summary><p>Make sure that you have added ApexInspector namespace in your script, to get access to all attributes.
 <div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">ApexInspector</span><span class="p">;</span>
 </code></pre></div></p>
 </details>
-<hr/>
+<hr />
 <h3 id="demo">Demo</h3>
 <div class="highlight"><pre><span></span><code><span class="k">using</span> <span class="nn">ApexInspector</span><span class="p">;</span>
 <span class="k">using</span> <span class="nn">UnityEngine</span><span class="p">;</span>
@@ -703,22 +1439,30 @@
 <span class="p">{</span>
     <span class="k">public</span> <span class="kt">float</span> <span class="n">value1</span><span class="p">;</span>
 
-<span class="na">    [Foldout("Some Title")]</span>
+<span class="na">    [Foldout(&quot;Some Title&quot;)]</span>
     <span class="k">public</span> <span class="kt">float</span> <span class="n">value2</span><span class="p">;</span>
 
-<span class="na">    [Foldout("Some Title")]</span>
+<span class="na">    [Foldout(&quot;Some Title&quot;)]</span>
     <span class="k">public</span> <span class="kt">float</span> <span class="n">value3</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div>
 <figure>
-<img src="/images/layout_attributes/foldout/live-demo.gif" width="500"/>
-<figcaption>Live demo</figcaption>
+<img src="/images/layout_attributes/foldout/live-demo.gif" width="500" />
+  <figcaption>Live demo</figcaption>
 </figure>
-</article>
-</div>
-</div>
-</main>
-<!--
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        <!--
   Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to
@@ -736,57 +1480,89 @@
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
   IN THE SOFTWARE.
 -->
+
+
+
 <!-- Application footer -->
 <footer class="md-footer">
-<!-- Link to previous and/or next page -->
-<div class="md-footer-nav">
-<nav aria-label="Footer" class="md-footer-nav__inner md-grid">
-<!-- Link to previous page -->
-<a class="md-footer-nav__link md-footer-nav__link--prev" href="../group/" rel="prev" title="Group">
-<div class="md-footer-nav__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
-</div>
-<div class="md-footer-nav__title">
-<div class="md-ellipsis">
-<span class="md-footer-nav__direction">
+
+  <!-- Link to previous and/or next page -->
+  
+    <div class="md-footer-nav">
+      <nav
+        class="md-footer-nav__inner md-grid"
+        aria-label="Footer"
+      >
+
+        <!-- Link to previous page -->
+        
+          <a
+            href="../group/"
+            title="Group"
+            class="md-footer-nav__link md-footer-nav__link--prev"
+            rel="prev"
+          >
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Group
               </div>
-</div>
-</a>
-<!-- Link to next page -->
-<a class="md-footer-nav__link md-footer-nav__link--next" href="../tab/" rel="next" title="Tab">
-<div class="md-footer-nav__title">
-<div class="md-ellipsis">
-<span class="md-footer-nav__direction">
+            </div>
+          </a>
+        
+
+        <!-- Link to next page -->
+        
+          <a
+            href="../tab/"
+            title="Tab"
+            class="md-footer-nav__link md-footer-nav__link--next"
+            rel="next"
+          >
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
                   Next
                 </span>
                 Tab
               </div>
-</div>
-<div class="md-footer-nav__button md-icon">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"></path></svg>
-</div>
-</a>
-</nav>
-</div>
-<!-- Further information -->
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<!-- Copyright and theme information -->
-<div class="md-footer-copyright">
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
         
-        Copyright © Tamerlan Favilevich 2017-2020 All rights reserved.
-       ... <a class="link--pdf-download" download href="..\..\..\pdf\document.pdf" title="PDF">download PDF</a></div>
-<!-- Social links -->
-</div>
-</div>
+      </nav>
+    </div>
+  
+
+  <!-- Further information -->
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+
+      <!-- Copyright and theme information -->
+      <div class="md-footer-copyright">
+        
+        Copyright &copy; Tamerlan Favilevich 2017-2020 All rights reserved.
+      </div>
+
+      <!-- Social links -->
+      
+    </div>
+  </div>
 </footer>
-</div>
-<script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-<script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
-<script>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
         app = initialize({
           base: "../../..",
           features: ['navigation.tabs'],
@@ -795,5 +1571,7 @@
           }, typeof search !== "undefined" && search)
         })
       </script>
-</body>
+      
+    
+  </body>
 </html>
